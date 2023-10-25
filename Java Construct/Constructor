@@ -1,0 +1,11 @@
+public class class2{
+    int x, y;
+
+    public class2()
+    {
+        x=10;
+        y=11;
+    }
+
+    
+}

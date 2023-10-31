@@ -1,6 +1,15 @@
 import java.util.Scanner;
 
 public class Advance_Grade_calculator {
+
+    private int getNumberFrom0To100() {
+        Scanner in = new Scanner(System.in);
+        int result;
+        do {
+            result = in.nextInt();
+        } while(result < 0 || result > 100);
+        return result;
+    }
     
     public static void main(String args[])
     {
@@ -18,9 +27,6 @@ public class Advance_Grade_calculator {
         System.out.println("Social Science:");
         int SocialScience = sc.nextInt();
 
-        if (Maths>100 || English>100 ||) {
-            
-        }
         float total = Maths + English + Hindi + Science + SocialScience;
 
         float percentage = (total/500)*100;

@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public class Advance_Grade_calculator {
 
-    private int getNumberFrom0To100() {
-        Scanner in = new Scanner(System.in);
+    static int getNumberFrom0To100()
+    {
+        Scanner sc = new Scanner(System.in);
         int result;
-        do {
-            result = in.nextInt();
+        do{
+            result = sc.nextInt();
         } while(result < 0 || result > 100);
         return result;
     }
@@ -17,15 +18,15 @@ public class Advance_Grade_calculator {
 
         System.out.println("Enter the marks of subjects (out of /100):");
         System.out.println("Maths:");
-        int Maths = sc.nextInt();
+        int Maths = getNumberFrom0To100();
         System.out.println("English:");
-        int English = sc.nextInt();
+        int English = getNumberFrom0To100();
         System.out.println("Hindi:");
-        int Hindi = sc.nextInt();
+        int Hindi = getNumberFrom0To100();
         System.out.println("Science:");
-        int Science = sc.nextInt();
+        int Science = getNumberFrom0To100();
         System.out.println("Social Science:");
-        int SocialScience = sc.nextInt();
+        int SocialScience = getNumberFrom0To100();
 
         float total = Maths + English + Hindi + Science + SocialScience;
 
